@@ -1,5 +1,6 @@
 # define punctuation
-punctuations = '''()-[]{};:'"\,<>./?!@#$%^&*_~'''
+
+punctuations = '''!-[]{}();:'"\,<>./?@#$%^&*_~'''
 
 my_str = "Hello!!!, he said ---and went."
 
