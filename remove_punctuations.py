@@ -1,17 +1,16 @@
-# define punctuation
+def remove_punctuation(my_str):
+	# define punctuation
+	punctuations = '''!-[]{}();:'"\,<>./?@#$%^&*_~'''
 
-punctuations = '''!-[]{}();:'"\,<>./?@#$%^&*_~'''
+	# remove punctuation from the string
+	no_punct = ""
+	for char in my_str:
+		if char not in punctuations:
+			no_punct = no_punct + char
+	
+	# return string without punctuation
+	return no_punct
 
-my_str = "Hello!!!, he said ---and went."
-
-# To take input from the user
-# my_str = input("Enter a string: ")
-
-# remove punctuation from the string
-no_punct = ""
-for char in my_str:
-   if char not in punctuations:
-       no_punct = no_punct + char
 
 # display the unpunctuated string
-print(no_punct)
+print('The result of program is', remove_punctuation(input('Enter the string: ')))
