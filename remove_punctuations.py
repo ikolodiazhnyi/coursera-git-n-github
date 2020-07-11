@@ -1,3 +1,5 @@
+print('Program removes punctuation from the line you enter. Try this!')
+
 def remove_punctuation(my_str):
 	# define punctuation
 	punctuations = '''!-[]{}();:'"\,<>./?@#$%^&*_~'''
