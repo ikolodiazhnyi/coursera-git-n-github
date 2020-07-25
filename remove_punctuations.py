@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # define punctuation
 punctuations = '''()-[]{};:'"\,<>./?!@#$%^&*_~'''
 =======
@@ -7,6 +8,8 @@ punctuations = '''()-[]{};:'"\,<>./?!@#$%^&*_~'''
 import socket
 
 >>>>>>> 462fd39... Add simple network connectivity check
+=======
+>>>>>>> 5b0ca64... Revert "Add simple network connectivity check"
 print('Program removes punctuation from the line you enter. Try this!')
 
 def remove_punctuation(my_str):
@@ -16,6 +19,7 @@ def remove_punctuation(my_str):
 
 my_str = "Hello!!!, he said ---and went."
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 # To take input from the user
 # my_str = input("Enter a string: ")
@@ -41,3 +45,8 @@ def check_no_network():
 print('The result of program is', remove_punctuation(input('Enter the string: ')))
 print(check_no_network())
 >>>>>>> 72984be... Add simple network connectivity check
+=======
+
+# display the unpunctuated string
+print('The result of program is', remove_punctuation(input('Enter the string: ')))
+>>>>>>> 5b0ca64... Revert "Add simple network connectivity check"
