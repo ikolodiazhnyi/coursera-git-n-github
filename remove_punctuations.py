@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 # define punctuation
 punctuations = '''()-[]{};:'"\,<>./?!@#$%^&*_~'''
 =======
@@ -15,11 +16,16 @@ import socket
 import socket
 
 >>>>>>> 8f64cbc... Revert "Revert "Add simple network connectivity check"
+=======
+import socket
+
+>>>>>>> dea5ba57a4c7989ef519b863bd2add8d51bd361b
 print('Program removes punctuation from the line you enter. Try this!')
 
 def remove_punctuation(my_str):
 	# define punctuation
 	punctuations = '''!-[]{}();:'"\,<>./?@#$%^&*_~'''
+<<<<<<< HEAD
 >>>>>>> 5e3b0a8... Add explanation print
 
 my_str = "Hello!!!, he said ---and went."
@@ -41,6 +47,18 @@ print(no_punct)
 =======
 =======
 >>>>>>> 8f64cbc... Revert "Revert "Add simple network connectivity check"
+=======
+
+	# remove punctuation from the string
+	no_punct = ""
+	for char in my_str:
+		if char not in punctuations:
+			no_punct = no_punct + char
+	
+	# return string without punctuation
+	return no_punct
+
+>>>>>>> dea5ba57a4c7989ef519b863bd2add8d51bd361b
 def check_no_network():
 	""" Returns True if it fails to resolve Google's URL, False otherwise"""
 	try:
@@ -48,6 +66,7 @@ def check_no_network():
 		return False
 	except:
 		return True
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 # display the unpunctuated string
@@ -65,3 +84,9 @@ print('The result of program is', remove_punctuation(input('Enter the string: ')
 print('The result of program is', remove_punctuation(input('Enter the string: ')))
 print(check_no_network())
 >>>>>>> 8f64cbc... Revert "Revert "Add simple network connectivity check"
+=======
+
+# display the unpunctuated string
+print('The result of program is', remove_punctuation(input('Enter the string: ')))
+print(check_no_network())
+>>>>>>> dea5ba57a4c7989ef519b863bd2add8d51bd361b
