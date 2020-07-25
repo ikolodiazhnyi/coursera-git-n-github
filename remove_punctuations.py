@@ -1,7 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # define punctuation
 punctuations = '''()-[]{};:'"\,<>./?!@#$%^&*_~'''
 =======
+=======
+import socket
+
+>>>>>>> 462fd39... Add simple network connectivity check
 print('Program removes punctuation from the line you enter. Try this!')
 
 def remove_punctuation(my_str):
