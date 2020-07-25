@@ -11,6 +11,7 @@ def remove_punctuation(my_str):
 
 my_str = "Hello!!!, he said ---and went."
 
+<<<<<<< HEAD
 # To take input from the user
 # my_str = input("Enter a string: ")
 
@@ -22,3 +23,16 @@ for char in my_str:
 
 # display the unpunctuated string
 print(no_punct)
+=======
+def check_no_network():
+	""" Returns True if it fails to resolve Google's URL, False otherwise"""
+	try:
+		socket.gethostbyname("www.google.com")
+		return False
+	except:
+		return True
+
+# display the unpunctuated string
+print('The result of program is', remove_punctuation(input('Enter the string: ')))
+print(check_no_network())
+>>>>>>> 72984be... Add simple network connectivity check
