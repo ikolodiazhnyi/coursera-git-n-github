@@ -1,64 +1,24 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+print('Program removes punctuation from the line you enter', end='')
+print(' and tells if it fails to resolve Google\'s URL')
+
+import socket
+
 # define punctuation
 punctuations = '''()-[]{};:'"\,<>./?!@#$%^&*_~'''
-=======
-=======
-import socket
-
->>>>>>> 462fd39... Add simple network connectivity check
-=======
->>>>>>> 5b0ca64... Revert "Add simple network connectivity check"
-=======
-import socket
-
->>>>>>> 8f64cbc... Revert "Revert "Add simple network connectivity check"
-=======
-import socket
-
->>>>>>> dea5ba57a4c7989ef519b863bd2add8d51bd361b
-print('Program removes punctuation from the line you enter. Try this!')
 
 def remove_punctuation(my_str):
 	# define punctuation
 	punctuations = '''!-[]{}();:'"\,<>./?@#$%^&*_~'''
-<<<<<<< HEAD
->>>>>>> 5e3b0a8... Add explanation print
 
-my_str = "Hello!!!, he said ---and went."
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-# To take input from the user
-# my_str = input("Enter a string: ")
-
-# remove punctuation from the string
-no_punct = ""
-for char in my_str:
-   if char not in punctuations:
-       no_punct = no_punct + char
-
-<<<<<<< HEAD
-# display the unpunctuated string
-print(no_punct)
-=======
-=======
->>>>>>> 8f64cbc... Revert "Revert "Add simple network connectivity check"
-=======
-
+def remove_punctuation(my_str):
 	# remove punctuation from the string
 	no_punct = ""
 	for char in my_str:
 		if char not in punctuations:
 			no_punct = no_punct + char
-	
 	# return string without punctuation
 	return no_punct
 
->>>>>>> dea5ba57a4c7989ef519b863bd2add8d51bd361b
 def check_no_network():
 	""" Returns True if it fails to resolve Google's URL, False otherwise"""
 	try:
@@ -66,27 +26,8 @@ def check_no_network():
 		return False
 	except:
 		return True
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 
 # display the unpunctuated string
 print('The result of program is', remove_punctuation(input('Enter the string: ')))
-print(check_no_network())
->>>>>>> 72984be... Add simple network connectivity check
-=======
-
-# display the unpunctuated string
-print('The result of program is', remove_punctuation(input('Enter the string: ')))
->>>>>>> 5b0ca64... Revert "Add simple network connectivity check"
-=======
-
-# display the unpunctuated string
-print('The result of program is', remove_punctuation(input('Enter the string: ')))
-print(check_no_network())
->>>>>>> 8f64cbc... Revert "Revert "Add simple network connectivity check"
-=======
-
-# display the unpunctuated string
-print('The result of program is', remove_punctuation(input('Enter the string: ')))
-print(check_no_network())
->>>>>>> dea5ba57a4c7989ef519b863bd2add8d51bd361b
+print('Fails to resolve Google\'s URL -', check_no_network())
